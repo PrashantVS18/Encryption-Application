@@ -112,6 +112,8 @@ namespace armstrong.BusinessLayer
                 string strDecrypted = ASCIIEncoding.ASCII.GetString(objDESCrypto.CreateDecryptor().TransformFinalBlock(byteBuff, 0, byteBuff.Length));
                 objDESCrypto = null;
 
+                Console.WriteLine("This is For Git Changes");
+
                 return strDecrypted;
             }
             catch (Exception ex)
